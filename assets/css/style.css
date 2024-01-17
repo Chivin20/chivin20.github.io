@@ -241,14 +241,15 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg.jpg");
-  background-position: top right;
+ background-image: url("../img/bg.jpg");
+ background-size:cover;
+ background-position: top;
   
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(1, 19, 44, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -292,15 +293,22 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  #hero:before  {
+  background: rgba(1, 19, 44, 0.3);
+ }
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 22px;
   }
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  #hero p {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -537,18 +545,18 @@ section {
 
 .portfolio #portfolio-flters {
   padding: 0;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
   background: #fff;
   border-radius: 50px;
-  padding: 2px 15px;
+  padding: 2px 5px;
 }
 
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px 8px 15px;
+  padding: 2px 2px 5px 5px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -875,22 +883,22 @@ section {
 }
 
 .contact .info h4 {
-  padding: 0 0 0 60px;
+  padding: 0 0 0 50px;
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   color: #050d18;
 }
 
 .contact .info p {
-  padding: 0 0 10px 60px;
+  padding: 0 0 10px 40px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #173b6c;
 }
 
 .contact .info .email p {
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .contact .info .social-links {
